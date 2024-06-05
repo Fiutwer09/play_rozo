@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="shortcut icon" href="./src/img/consola-de-juego.ico" type="image/x-icon">
+    <title>Video Game</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Rock , Paper , Scissors</h1>
+      </div>
+    </header>
+    <main>
+      <section class="container-1">
+        <div class="reload">
+          <button class="btn-class-name" id="reload">
+            <span class="back"></span>
+            <span class="front">Reload</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container-wrapper">
+        <h1 id="result">Game Result</h1>
+        <section class="container-2">
+          <div class="col-left">
+            <h2>USER</h2>
+            <span id="user-counter">0</span>
+            <button class="rock" id="btn-rock">
+              <img src="./src/img/rock.JPG" alt="rock" />
+            </button>
+            <button class="paper" id="btn-paper">
+              <img src="./src/img/paper.JPG" alt="paper" />
+            </button>
+            <button class="scissors" id="btn-Scissor" >
+              <img src="./src/img/Scissors.JPG" alt="sccissors" />
+            </button>
+            <h2 id="tittle-User">Here is your choice!</h2>
+            <img class="players" src="./src/img/Scissors.JPG" alt="user-choice" id="user-choice-img" />
+          </div>
+        </section>
+        <section class="container-3">
+          <div class="col-rigth">
+            <h2>CPU</h2>
+            <span id="cpu-counter">0</span>
+            <button class="rock">
+              <img src="./src/img/rock.JPG" alt="rock" />
+            </button>
+            <button class="paper">
+              <img src="./src/img/paper.JPG" alt="paper" />
+            </button>
+            <button class="scissors">
+              <img src="./src/img/Scissors.JPG" alt="sccissors" />
+            </button>
+            <h2 id="tittle-Cpu">The cpu chooses!</h2>
+            <img class="players" src="src/img/rock.JPG" alt="cpu-choice" id="cpu-choice-img" />
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
